@@ -1,0 +1,42 @@
+{
+  "name": "ethereum-balance-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "author": "4PTEM",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "nest build",
+    "format": "prettier \"src/**/*.ts\" \"test/**/*.ts\"",
+    "format:fix": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "NODE_ENV=development nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/src/main",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
+    "lint:fix": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nestjs/axios": "^3.0.3",
+    "@nestjs/common": "^9.0.0",
+    "@nestjs/config": "^2.2.0",
+    "@nestjs/core": "^9.0.0",
+    "@nestjs/microservices": "^9.2.1",
+    "@nestjs/platform-express": "^9.0.0",
+    "axios-retry": "^4.5.0",
+    "class-transformer": "^0.5.1",
+    "ethers": "^5.7.2",
+    "lodash": "^4.17.21",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@nestjs/cli": "^9.0.0",
+    "@types/lodash": "^4.17.9",
+    "eslint": "^8.57.0",
+    "globals": "^15.9.0",
+    "prettier": "^2.3.2",
+    "typescript-eslint": "^8.5.0"
+  }
+}
